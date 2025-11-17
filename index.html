@@ -1,33 +1,26 @@
- <!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brooke Waller — Portfolio</title>
-
-  <!-- Google Fonts (replace or remove if you prefer local fonts) -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
-  <meta name="description" content="Brooke Waller — Digital Media, Content Creation & Photography portfolio.">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="#home">Brooke Waller</a>
-      <nav class="nav" aria-label="Main navigation">
+      <nav class="nav">
         <a href="#portfolio">Portfolio</a>
         <a href="#about">About</a>
         <a href="#process">Process</a>
         <a href="#contact">Contact</a>
       </nav>
-
-      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">
-        <span class="sr-only">Toggle menu</span>
-        ☰
-      </button>
+      <button class="menu-btn" id="menuBtn">☰</button>
     </div>
-
     <nav id="mobileNav" class="mobile-nav" hidden>
       <a href="#portfolio">Portfolio</a>
       <a href="#about">About</a>
@@ -46,12 +39,11 @@
           <p class="hero-blurb">I help small businesses and creators find a bold, consistent visual voice across social and web. Available for branding, content strategy, and campaign work.</p>
           <div class="hero-cta">
             <a class="btn" href="#portfolio">See Work</a>
-            <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+            <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank">Download Resume</a>
           </div>
         </div>
-
         <div class="hero-image">
-          <img src="assets/hero.jpg" alt="Sample hero photo — replace with your image">
+          <img src="assets/hero.jpg" alt="Sample hero photo">
         </div>
       </div>
     </section>
@@ -65,7 +57,6 @@
         <div class="about-text">
           <h2>About Me</h2>
           <p>Hi — I’m Brooke. I design social-first visuals, brand kits, and photo/video content that feels modern and intentional. I work quickly, communicate clearly, and deliver assets ready to post.</p>
-
           <ul class="skill-list">
             <li><strong>Creative:</strong> Social ads • Branding • Photo direction</li>
             <li><strong>Tools:</strong> Premiere Pro • Lightroom • Photoshop • Figma</li>
@@ -79,9 +70,17 @@
     <section id="portfolio" class="section portfolio">
       <div class="container">
         <h2>Selected Projects</h2>
-        <p class="section-sub">Click any project to open a case study.</p>
-
-        <div id="projectsGrid" class="projects-grid" aria-live="polite"></div>
+        <div class="projects-grid">
+          <!-- Add your projects here -->
+          <div class="project-card">
+            <img src="assets/project1.jpg" alt="Project 1" class="project-thumb">
+            <h3 class="project-title">Project 1</h3>
+          </div>
+          <div class="project-card">
+            <img src="assets/project2.jpg" alt="Project 2" class="project-thumb">
+            <h3 class="project-title">Project 2</h3>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -106,35 +105,17 @@
       </div>
     </section>
 
-    <!-- TESTIMONIALS -->
-    <section class="section testimonials">
-      <div class="container">
-        <h2>What clients say</h2>
-        <div class="testimonials-grid">
-          <blockquote>
-            <p>“Brooke transformed our feed — sales increased the week after launch.”</p>
-            <cite>— Marlenis, Marlenis Boujee Bakery</cite>
-          </blockquote>
-
-          <blockquote>
-            <p>“Fast, professional, and creative. Highly recommend for small businesses.”</p>
-            <cite>— Client Name</cite>
-          </blockquote>
-        </div>
-      </div>
-    </section>
-
     <!-- CONTACT -->
     <section id="contact" class="section contact">
       <div class="container contact-grid">
         <div>
           <h2>Let’s work together</h2>
-          <p>Availability, rates, or general questions — email me and I’ll reply within 48 hours.</p>
+          <p>Email me or reach out on Instagram — I’ll reply within 48 hours.</p>
           <p><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
-          <p><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
         </div>
 
-        <form id="contactForm" class="contact-form" action="mailto:you@example.com" method="get" role="form">
+        <form class="contact-form">
           <label for="name">Name</label>
           <input id="name" name="name" required>
 
@@ -160,8 +141,7 @@
     </div>
   </footer>
 
- 
-
   <script src="script.js" defer></script>
 </body>
 </html>
+
