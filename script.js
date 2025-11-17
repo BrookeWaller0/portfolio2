@@ -25,19 +25,21 @@ const track = document.querySelector('.carousel-track');
 const items = Array.from(track.children);
 const nextBtn = document.querySelector('.carousel-btn.next');
 const prevBtn = document.querySelector('.carousel-btn.prev');
-let currentIndex = 0;
+let index = 0;
 
 function updateCarousel() {
-  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+  track.style.transform = `translateX(-${index * 100}%)`;
 }
 
 nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % items.length;
+  if (index < items.length - 1) index++;
+  else index = 0;
   updateCarousel();
 });
 
 prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  if (index > 0) index--;
+  else index = items.length - 1;
   updateCarousel();
 });
-updateCarousel(); 
+updateCarousel();
