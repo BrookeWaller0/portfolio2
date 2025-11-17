@@ -1,0 +1,174 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brooke Waller — Portfolio</title>
+
+  <!-- Google Fonts (replace or remove if you prefer local fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Brooke Waller — Digital Media, Content Creation & Photography portfolio.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home">Brooke Waller</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">
+        <span class="sr-only">Toggle menu</span>
+        ☰
+      </button>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav" hidden>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Brooke Waller</h1>
+          <p class="lead">Digital Media • Content Creator • Photographer</p>
+          <p class="hero-blurb">I help small businesses and creators find a bold, consistent visual voice across social and web. Available for branding, content strategy, and campaign work.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#portfolio">See Work</a>
+            <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <img src="assets/hero.jpg" alt="Sample hero photo — replace with your image">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <img src="assets/about.jpg" alt="Portrait of Brooke Waller">
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>Hi — I’m Brooke. I design social-first visuals, brand kits, and photo/video content that feels modern and intentional. I work quickly, communicate clearly, and deliver assets ready to post.</p>
+
+          <ul class="skill-list">
+            <li><strong>Creative:</strong> Social ads • Branding • Photo direction</li>
+            <li><strong>Tools:</strong> Premiere Pro • Lightroom • Photoshop • Figma</li>
+            <li><strong>Work style:</strong> Collaborative, deadline-oriented, client-focused</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2>Selected Projects</h2>
+        <p class="section-sub">Click any project to open a case study.</p>
+
+        <div id="projectsGrid" class="projects-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section process">
+      <div class="container">
+        <h2>Process</h2>
+        <div class="process-grid">
+          <div class="process-step">
+            <h3>1. Concept</h3>
+            <p>We define goals, tone, and deliverables with a short creative brief.</p>
+          </div>
+          <div class="process-step">
+            <h3>2. Design</h3>
+            <p>Mockups, photo direction, and templates so content is easy to publish.</p>
+          </div>
+          <div class="process-step">
+            <h3>3. Deliver</h3>
+            <p>Organized files, captions, and assets optimized for platforms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials">
+      <div class="container">
+        <h2>What clients say</h2>
+        <div class="testimonials-grid">
+          <blockquote>
+            <p>“Brooke transformed our feed — sales increased the week after launch.”</p>
+            <cite>— Marlenis, Marlenis Boujee Bakery</cite>
+          </blockquote>
+
+          <blockquote>
+            <p>“Fast, professional, and creative. Highly recommend for small businesses.”</p>
+            <cite>— Client Name</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Let’s work together</h2>
+          <p>Availability, rates, or general questions — email me and I’ll reply within 48 hours.</p>
+          <p><strong>Email:</strong> <a href="mailto:you@example.com">you@example.com</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/yourhandle" target="_blank" rel="noopener">@yourhandle</a></p>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="mailto:you@example.com" method="get" role="form">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn" type="submit">Send Email</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="copyYear"></span> Brooke Waller — All rights reserved</small>
+      <nav class="footer-nav">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- PROJECT MODAL -->
+  <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+    <div class="modal-backdrop" id="modalBackdrop" tabindex="-1"></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Close project">✕</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
