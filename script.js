@@ -69,3 +69,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initial setup
   updateCarousel();
 });
+// Add after initial setup if you want auto-slide
+const intervalMs = 4000;
+let auto = setInterval(() => goTo(currentIndex + 1), intervalMs);
+
+// Pause on hover
+track.parentElement.addEventListener("mouseenter", () => clearInterval(auto));
+track.parentElement.addEventListener("mouseleave", () => {
+  auto = setInterval(() => goTo(currentIndex + 1), intervalMs);
+});
