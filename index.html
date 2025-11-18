@@ -39,11 +39,11 @@
           <p class="hero-blurb">I help small businesses and creators find a bold, consistent visual voice across social and web. Available for branding, content strategy, and campaign work.</p>
           <div class="hero-cta">
             <a class="btn" href="#portfolio">See Work</a>
-            <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank">Download Resume</a>
+            <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download Resume</a>
           </div>
         </div>
         <div class="hero-image">
-          <img src="assets/me.jpg" alt=" hero photo">
+          <img src="assets/me.jpg" alt="Portrait of Brooke Waller">
         </div>
       </div>
     </section>
@@ -51,9 +51,7 @@
     <!-- ABOUT -->
     <section id="about" class="section about">
       <div class="container about-grid">
-        <div class="about-media">
-          
-        </div>
+        <div class="about-media"></div>
         <div class="about-text">
           <h2>About Me</h2>
           <p>Hi — I’m Brooke. I design social-first visuals, brand kits, and photo/video content that feels modern and intentional. I work quickly, communicate clearly, and deliver assets ready to post.</p>
@@ -66,41 +64,71 @@
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <!-- PORTFOLIO -->
-<section id="portfolio" class="section portfolio">
-  <div class="container">
-    <h2>Selected Work</h2>
-    <p class="section-sub">Scroll or use arrows to see my projects.</p>
+    <!-- PORTFOLIO (GRID) -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2>Selected Work</h2>
+        <p class="section-sub">Recent projects across digital media, web, branding, and photography.</p>
 
-    <div class="carousel">
-      <button class="carousel-btn prev">&#10094;</button>
-      <div class="carousel-track">
-        <!-- Add your projects here -->
-        <div class="carousel-item">
-  <img src="assets/Newsletter .jpg" alt="Digital Media Project 1">
-  <h3>Digital Media</h3>
-</div>
+        <div class="portfolio-grid">
+          <!-- Digital Media -->
+          <article class="portfolio-card">
+            <div class="portfolio-media">
+              <img src="assets/Newsletter.jpg" alt="Newsletter design preview">
+              <div class="portfolio-overlay">
+                <a class="portfolio-view-btn" href="assets/Newsletter.pdf" target="_blank" rel="noopener">View PDF</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Digital Media</h3>
+              <p class="portfolio-tag">Campaign assets • Newsletter design</p>
+            </div>
+          </article>
 
+          <!-- Website Landing Page -->
+          <article class="portfolio-card">
+            <div class="portfolio-media">
+              <img src="assets/landing1.jpg" alt="Website landing page mockup">
+              <div class="portfolio-overlay">
+                <a class="portfolio-view-btn" href="assets/landing1.jpg" target="_blank" rel="noopener">Open image</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Website Landing Page</h3>
+              <p class="portfolio-tag">Web design • Hero layout • CTA strategy</p>
+            </div>
+          </article>
 
-        <div class="carousel-item">
-          <img src="assets/landing1.jpg" alt="Website Landing Page 1">
-          <h3>Website Landing Page</h3>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/The Cookie Jar.PNG" alt="Logo / Branding 1">
-          <h3>Logo & Branding</h3>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/1U4A3787.jpg" alt="Photography Project 1">
-          <h3>Photography</h3>
+          <!-- Logo & Branding -->
+          <article class="portfolio-card">
+            <div class="portfolio-media">
+              <img src="assets/The Cookie Jar.png" alt="Logo and branding system preview">
+              <div class="portfolio-overlay">
+                <a class="portfolio-view-btn" href="assets/The Cookie Jar.png" target="_blank" rel="noopener">Open image</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Logo & Branding</h3>
+              <p class="portfolio-tag">Identity • Color • Typography</p>
+            </div>
+          </article>
+
+          <!-- Photography -->
+          <article class="portfolio-card">
+            <div class="portfolio-media">
+              <img src="assets/1U4A3787.jpg" alt="Photography feature shot">
+              <div class="portfolio-overlay">
+                <a class="portfolio-view-btn" href="assets/1U4A3787.jpg" target="_blank" rel="noopener">Open image</a>
+              </div>
+            </div>
+            <div class="portfolio-content">
+              <h3 class="portfolio-title">Photography</h3>
+              <p class="portfolio-tag">Portraits • Lifestyle • Product</p>
+            </div>
+          </article>
         </div>
       </div>
-      <button class="carousel-btn next">&#10095;</button>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- PROCESS -->
     <section id="process" class="section process">
@@ -129,8 +157,8 @@
         <div>
           <h2>Let’s work together</h2>
           <p>Email me or reach out on Instagram — I’ll reply within 48 hours.</p>
-          <p><strong>Email:</strong> <a href="mailto:you@example.com">Brookewaller0@gmail.com</a></p>
-          <p><strong>Instagram:</strong> <a href="https://instagram.com/brookewallerphotography" target="_blank">@brookewallerphotography</a></p>
+          <p><strong>Email:</strong> <a href="mailto:Brookewaller0@gmail.com">Brookewaller0@gmail.com</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/brookewallerphotography" target="_blank" rel="noopener">@brookewallerphotography</a></p>
         </div>
 
         <form class="contact-form">
@@ -162,4 +190,3 @@
   <script src="script.js" defer></script>
 </body>
 </html>
-
