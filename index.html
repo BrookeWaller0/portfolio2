@@ -114,18 +114,24 @@
           </article>
 
           <!-- Photography -->
-          <article class="portfolio-card">
-            <div class="portfolio-media">
-              <img src="assets/1U4A3787.jpg" alt="Photography feature shot">
-              <div class="portfolio-overlay">
-                <a class="portfolio-view-btn" href="assets/1U4A3787.jpg" target="_blank" rel="noopener">Open image</a>
-              </div>
-            </div>
-            <div class="portfolio-content">
-              <h3 class="portfolio-title">Photography</h3>
-              <p class="portfolio-tag">Portraits • Lifestyle • Product</p>
-            </div>
-          </article>
+          <!-- Photography (scaled nicely) -->
+<article class="portfolio-card" style="max-width: 720px; margin: 0 auto;">
+  <div class="portfolio-media" style="aspect-ratio: 4 / 3; background: #eaeaec;">
+    <img
+      src="assets/1U4A3787.jpg"
+      alt="Photography feature shot"
+      style="display: block; width: 100%; height: 100%; object-fit: cover;"
+    >
+    <div class="portfolio-overlay" style="position: absolute; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,0); opacity: 0; transition: opacity 160ms ease, background 160ms ease;">
+      <a class="portfolio-view-btn" href="assets/1U4A3787.jpg" target="_blank" rel="noopener" style="display:inline-block;padding:0.55rem 0.9rem;border-radius:999px;background:#fff;color:#111;font-weight:600;font-size:0.9rem;border:1px solid rgba(0,0,0,0.1);text-decoration:none;">Open image</a>
+    </div>
+  </div>
+  <div class="portfolio-content" style="padding: 0.85rem 1rem 1rem;">
+    <h3 class="portfolio-title" style="margin: 0 0 0.25rem; font-size: 1.05rem; font-weight: 600;">Photography</h3>
+    <p class="portfolio-tag" style="font-size: 0.9rem; color: #555;">Portraits • Lifestyle • Product</p>
+  </div>
+</article>
+
         </div>
       </div>
     </section>
